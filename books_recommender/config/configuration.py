@@ -3,9 +3,8 @@ import sys
 from books_recommender.logger.log import logging
 from books_recommender.utils.util import read_yaml_file
 from books_recommender.exception.exception_handler import AppException
-from books_recommender.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig, ModelRecommendationConfig
+from books_recommender.entity.config_entity import DataIngestionConfig
 from books_recommender.constant import *
-
 
 class AppConfiguration:
     def __init__(self, config_file_path: str = CONFIG_FILE_PATH):
